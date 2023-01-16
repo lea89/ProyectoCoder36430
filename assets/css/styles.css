@@ -1,6 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
+body{
+    background-color: #276E90;
+    font-family: Roboto;
+}
+
+hr{
+    color: #F2AA1F!important;
+    height: 5px!important;
 }
 
 /** Iniicio Propiedades compartidas **/
@@ -13,19 +18,27 @@
 /** Iniicio Propiedades compartidas **/
 
 /** Inicio Header **/
+.navbar-brand{
+    display:none;
+}
 nav,footer {
-    background-color: #276E90;
+    background-color: #276E90!important;
     display: flex;
     justify-content: center;
+    padding: 2%;
 }
+
+.nav__contenedor{
+    margin: auto;
+}
+
 nav ul{
-    width: 90%;
+    width: auto;
     text-align: center;
 }
 
 nav  ul  li{
     display: inline-block;
-    margin: 2% ;
 }
 
 nav  ul  li a{
@@ -37,10 +50,11 @@ nav  ul  li a{
 
 nav  ul  li a:hover{
     border-bottom: 1px solid #F2AA1F;
+    color:white;
 }
 
 .header__link--active{
-    border-bottom: 1px solid #F2AA1F;
+    color: #F2AA1F!important;
 }
 
 /** Fin Header **/
@@ -51,25 +65,17 @@ nav  ul  li a:hover{
     display:flex;
     flex-direction: row;
     perspective: 100rem;
-}
-.main section{
-    width: 90vw;
-    margin: 5% auto;
-}
-.main .presentacion img{
-    margin:auto;
-    display: block;
-    width: 20%;
-}
-.main .presentacion .presentacion__rotar--right{
-    transform: rotateY(-50deg);
-    width: 40%;
+    height: 71vh;
+    background-image: url(../img/fondo.webp);
+    background-size: cover;
 }
 
-.main .presentacion .presentacion__rotar--left{
-    transform: rotateY(50deg);
-    width: 40%;
+.main .presentacion img{
+    display: block;
+    width: 25%;
+    height: 100%;
 }
+
 
 .tecnologias{
     text-align: center;
@@ -81,15 +87,28 @@ nav  ul  li a:hover{
 
 /** Aca me costo hacer que los hijos no desbordaran **/
 
-.tecnologias__contenedor{
+.tecnologias__contenedor,.frameworks__contenedor{
     display: flex;
-    gap:50px;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-around;
+    background-color: #276E90;
+    padding:2% 0!important;
 }
 
-.tecnologias__img{
-    width: 25%;
+
+.tecnologias__titulo,
+.frameworks__titulo{
+    color: white;
+}
+
+.tecnologias__img,
+.frameworks__img{
+    width: 10%;
+}
+
+.tecnologias__img:hover,
+.frameworks__img:hover{
+    transform: scale(1.2)!important;
 }
 
 /** FIN INDEX **/
@@ -212,5 +231,15 @@ nav  ul  li a:hover{
 }
 
 footer{
-    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 4vh;
+}
+
+footer .fa-github, 
+footer .fa-gitlab{
+    font-size: 50px;
+    color: white;
 }

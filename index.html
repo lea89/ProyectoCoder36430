@@ -4,41 +4,58 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Fontawesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+        <!--Fuentes-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        
+        <!--BOOTSTRAP-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!--AOS-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <link rel="stylesheet" href="./assets/css/styles.css">
+        <link rel="stylesheet" href="./assets/css/mediaquery.css">
+
         <title>Lean Saubiette - Home</title>
     </head>
     <body>
         <header class="header">
-            <nav> 
-                <ul>
-                    <li class="header__link--active">
-                        <a href="#">Home</a>
-                    </li>
-                    
-                    <li>
-                        <a href="./views/proyectos.html">Proyectos</a>
-                    </li>
-                    
-                    <li>
-                        <a href="./views/aprendizaje.html">Aprendizaje</a>
-                    </li>
-                    
-                    <li>
-                        <a href="./views/contacto.html">Contacto</a>
-                    </li>                    
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="nav__contenedor">
+                  <a class="navbar-brand text-light" href="#">Menu</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link  text-light header__link--active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link  text-light" aria-current="page" href="./views/proyectos.html">Proyectos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link  text-light" aria-current="page" href="./views/aprendizaje.html">Aprendizaje</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="./views/contacto.html">Contacto</a>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
 
         <main class="main">
 
-            <h1 class="main__titulo">Bienvenido</h1>
 
-            <section class="presentacion">
-                <img src="./assets/img/payas.png" alt="Los Payas" class="presentacion__rotar--left">
-                <img src="./assets/img/lea-presentacion.png" alt="Imagen del desarrollador">
-                <img src="./assets/img/payas.png" alt="Los Payas" class="presentacion__rotar--right">
+            <section class="presentacion row">
+                <img data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500" src="./assets/img/lea-presentacion.png" alt="Imagen del desarrollador">
             </section>
 
             <section class="section__proyectos">
@@ -46,20 +63,44 @@
             </section>
 
             <section class="tecnologias">
-                <h2 class="tecnologias__titulo">Tecnologías con las que trabajo</h2>
+                <h2 class="tecnologias__titulo">Tecnologías</h2>
 
                 <div class="tecnologias__contenedor">
-                    <img src="./assets/img/example.jpeg" alt="Tecnologia 1" class="tecnologias__img">
-                    <img src="./assets/img/example.jpeg" alt="Tecnologia 2" class="tecnologias__img">
-                    <img src="./assets/img/example.jpeg" alt="Tecnologia 3" class="tecnologias__img">
+                    <img data-aos="fade-right" data-aos-duration="1500" src="./assets/img/html5.png" alt="Logo HTML 5" class="tecnologias__img">
+                    <img data-aos="fade-right" data-aos-duration="2000" src="./assets/img/js.png" alt="Logo JS" class="tecnologias__img">
+                    <img data-aos="fade-right" data-aos-duration="2500" src="./assets/img/css.png" alt="Logo CSS" class="tecnologias__img">
+                </div>
+                
+                <hr class="my-5">
+
+                <h2 class="frameworks__titulo my-5">Frameworks</h2>
+                
+                <div class="frameworks__contenedor mb-5">
+
+                    <img data-aos="zoom-in-up" data-aos-duration="1500" src="./assets/img/angular.png" alt="Logo Angular" class="frameworks__img">
+                    <img data-aos="zoom-in-up" data-aos-duration="2000" src="./assets/img/ionic.png" alt="Logo Ionic" class="frameworks__img">
+                    <img data-aos="zoom-in-up" data-aos-duration="2500" src="./assets/img/bootstrap.png" alt="Logo Bootstrap" class="frameworks__img">
                 </div>
             </section>
         </main>
 
-        <footer>
+        <hr>
 
+        <footer>
+          <label for="">Email: correo@prueba.com</label>
+          <label for="">Celular:+549111111111</label>
+          <a href="https://github.com/lea89" _target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://gitlab.com/lendor07" target="_blank"><i class="fab fa-gitlab"></i></a>
         </footer>
 
+        <!--Bootstrap-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <!--AOS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+          
     </body>
 </html>
