@@ -1,6 +1,7 @@
 body{
     background-color: #276E90;
     font-family: Roboto;
+    overflow-x: hidden;
 }
 
 hr{
@@ -145,6 +146,7 @@ nav  ul  li a:hover{
 
 /** Inicio aprendizaje**/
 .titulo-aprendizaje{
+    color:white;
     text-align: center;
     margin: 2rem;
 }
@@ -161,6 +163,9 @@ nav  ul  li a:hover{
     grid-template-columns: repeat(3,1fr);
 }
 
+.aprendizaje__item h3{
+    color:white;
+}
 .aprendizaje__texto{
     grid-column: 2/4;
     width: 80%;
@@ -170,7 +175,9 @@ nav  ul  li a:hover{
 }
 
 .aprendizaje__parrafo{
-    margin: 2rem auto;
+    background-color: lightgray;
+    padding: 10%;
+    border-radius:10px;
 }
 
 .aprendizaje__texto label{
@@ -242,4 +249,5 @@ footer .fa-github,
 footer .fa-gitlab{
     font-size: 50px;
     color: white;
+    vertical-align: super;
 }
