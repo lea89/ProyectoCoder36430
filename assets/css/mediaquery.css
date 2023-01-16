@@ -1,3 +1,70 @@
 @media screen and (max-width: 1024px) {
+    nav{
+        padding:2%
+    }
+
+
+    .nav__contenedor{
+        display: contents;
+        padding: 1%;
+    }
+
+    .navbar-nav{
+        margin:auto;
+    }
+
+    nav  ul  li{
+        width: max-content;
+        margin: auto;
+    }
+
+    .main .presentacion img{
+        width: auto;
+    }
+
+    .tecnologias__img,
+    .frameworks__img{
+        width: 15%;
+    }
+}
+@media screen and (max-width: 768px) {
+
+
+    .navbar-brand{
+        display: contents;
+        margin-left:1%;
+    }
+
+    .tecnologias__img,
+    .frameworks__img{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    nav{
+        flex-direction: row;
+        padding: 5%;
+    }
+
+
+    .main .presentacion {
+        height: 31vh;
+        background-repeat:  no-repeat;
+    }
+
     
+
+    .tecnologias__img,
+    .frameworks__img{
+        width: 20%;
+    }
+
+    footer a  {
+        padding: 0% 5%;
+        font-size: 8px;
+    }
+    footer .fa-github, footer .fa-gitlab{
+        font-size: 30px;
+    }
 }
