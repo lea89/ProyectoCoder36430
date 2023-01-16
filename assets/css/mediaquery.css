@@ -1,4 +1,9 @@
 @media screen and (max-width: 1024px) {
+
+    h1{
+        font-size: 24px;
+    }
+
     nav{
         padding:2%;
         font-size:30px;
@@ -17,15 +22,24 @@
     nav  ul  li{
         width: max-content;
         margin: auto;
+        font-size: 20px;
     }
 
     .main .presentacion img{
         width: auto;
+        margin: auto;
+    }
+    
+
+    .tecnologias__img{
+        width: 20%;
+    }
+    .frameworks__img{
+        width: 10%;
     }
 
-    .tecnologias__img,
-    .frameworks__img{
-        width: 15%;
+    .tecnologias__contenedor .carousel{
+        height: 85vh;
     }
 
     .aprendizaje__item {
@@ -34,46 +48,124 @@
         align-items: center;
     }
 
+    .aprendizaje__texto{
+        width: 100%;
+        align-items: center;
+    }
+
     .aprendizaje__subtitulo {
-        font-size: 35px;
+        font-size: 20px;
         margin-bottom: 5%;
         color: white;
     }
 
     .aprendizaje__img{
-        width: 60%;
+        width: 100%;
     }
 
     .aprendizaje__parrafo{
         margin-top:2%;
         padding:5%;
-        font-size: 20px;
+        font-size: 12px;
     }
     .aprendizaje__texto label{
-        font-size: 30px;
+        font-size: 12px;
+    }
+
+    .contacto__formulario{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .contacto__formulario input[name="telefono"]{
+        width: 100%;
+    }
+
+    footer label{
+        font-size: 15px;
+    }
+
+    footer .fa-github, footer .fa-gitlab{
+        font-size: 25px;
     }
 }
 @media screen and (max-width: 768px) {
 
+    h1{
+        font-size: 24px;
+    }
 
     .navbar-brand{
         display: contents;
         margin-left:1%;
     }
 
-    .tecnologias__img,
+    .navbar-nav{
+        font-size: 15px;
+    }
+
+
+    nav  ul  li{
+        margin: auto;
+        font-size: 15px;
+    }
+
+    .tecnologias__contenedor .carousel{
+        height: 65vh;
+    }
+
+    .tecnologias__img{
+        width: 15%;
+    }
+
     .frameworks__img{
-        width: 25%;
+        width: 10%;
+    }
+
+    .proyectos{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .aprendizaje__subtitulo{
+        font-size: 18px;
+    }
+
+    .aprendizaje__parrafo{
+        font-size: 12px;
     }
 
 
 
-    .aprendizaje__item .aprendizaje__img{
-        margin: 10%;
+    .aprendizaje__texto .aprendizaje__fecha{
+        font-size: 10px;
+    }
+
+    .detalle__tecnologias img{
+        width: 75%;
+    }
+
+    .detalle__tecnologias ul{
+        width: 60%;
+    }
+
+    .contacto__formulario{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .contacto__formulario input[name="email"],input[name="telefono"],textarea{
+        grid-column: 1/3;
+    }
+    
+    .contacto__formulario input[name="telefono"]{
+        width: 50%;
     }
 
     footer label{
-        font-size: 25px;
+        font-size: 12px;
+    }
+
+    footer .fa-github, footer .fa-gitlab{
+        font-size: 20px;
     }
 }
 
@@ -91,15 +183,74 @@
 
     
 
-    .tecnologias__img,
-    .frameworks__img{
+    .tecnologias__img{
         width: 20%;
     }
 
-    .aprendizaje__img{
+    .frameworks__img{
+        width: 15%;
+    }
+
+    .tecnologias__contenedor .carousel{
+        height: 45vh;
+    }
+
+    .aprendizaje{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .aprendizaje__subtitulo{
+        font-size: 18px;
+    }
+
+
+    .aprendizaje__parrafo{
+        font-size: 12px;
+    }
+
+    .aprendizaje__texto .aprendizaje__fecha{
+        font-size: 10px;
+    }
+
+    .proyectos{
+        grid-template-columns: 1fr;
+    }
+
+    .proyectos a{
+        width: 60%;
+    }
+    .detalle{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detalle__tecnologias{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
+    .detalle__tecnologias img{
+        width: 95%;
+    }
+
+    .detalle__tecnologias ul{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 45%;
+        margin: auto;
+        padding: 2% 3%;
+        align-items: center;
+    }
+
+    .detalle__tecnologias ul li img{
         width: 70%;
     }
 
+    .detalle__descripcion p{
+        font-size: 12px;
+    }
     footer a  {
         padding: 0% 5%;
         font-size: 8px;

@@ -5,7 +5,7 @@ body{
 }
 
 hr{
-    color: #F2AA1F!important;
+    color: #FFC300!important;
     height: 5px!important;
 }
 
@@ -96,13 +96,18 @@ nav  ul  li a:hover{
     padding:2% 0!important;
 }
 
+.tecnologias__contenedor .carousel{
+    height: 45vh;
+}
 
 .tecnologias__titulo,
 .frameworks__titulo{
     color: white;
 }
 
-.tecnologias__img,
+.tecnologias__img{
+    width: 15%;
+}
 .frameworks__img{
     width: 10%;
 }
@@ -116,17 +121,20 @@ nav  ul  li a:hover{
 
 /** Inicio Proyectos **/
 
-.proyectos{
+
+.proyectos {
     width: 90%;
-    display: flex;
-    flex-direction: row;
+    display: grid;
     gap: 50px;
-    flex-wrap: wrap;
+    margin: auto;
+    justify-items:center;
+    grid-template-columns: repeat(3,1fr);
 }
 
 /** Siempre tengo que darle un width para poder armar la cuadricula sea a la etiqueta a como a la imagen? **/
+
 .proyectos a {
-    width: 20%;
+    width: 60%;
     text-align: center;
     transition: all 1s;
 }
@@ -154,13 +162,15 @@ nav  ul  li a:hover{
 .aprendizaje{
     display: grid;
     gap:2rem;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3,1fr);
     grid-auto-rows: minmax(100px, auto);
     padding: 1rem;
 }
 .aprendizaje__item{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
 }
 
 .aprendizaje__item h3{
@@ -177,7 +187,7 @@ nav  ul  li a:hover{
 .aprendizaje__parrafo{
     background-color: lightgray;
     padding: 10%;
-    border-radius:10px;
+    margin-top: 3%;
 }
 
 .aprendizaje__texto label{
@@ -186,6 +196,50 @@ nav  ul  li a:hover{
 
 /**Fin aprendizaje**/
 
+/**Inicio Detalle proyecto**/
+.detalle{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.detalle__tecnologias{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    width: 90%;
+}
+
+.detalle__tecnologias img{
+    width: 50%;
+}
+
+.detalle__tecnologias ul{
+    border: 1px solid lightgray;
+    display: flex;
+    width: 45%;
+    margin: auto 0;
+    align-items: center;
+
+}
+
+
+
+.detalle__tecnologias ul li{
+   list-style: none;
+}
+
+.detalle__tecnologias ul li img{
+    width: 25%;
+ }
+ 
+.detalle__descripcion{
+    padding:1%;
+    background-color: #FFC300;
+}
+
+/**Fin detalle proyecto**/
+
 /**Inicio Contacto**/
 .contacto{
     display: flex;
@@ -193,49 +247,35 @@ nav  ul  li a:hover{
 }
 
 .contacto__formulario{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 30%;
-    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:0.5rem;
+    
 }
 
+.contacto__formulario input{
+    border-style: none;
+    border-radius: 5px;
+    padding: 1% 5%;
+}
+
+.contacto__formulario input:focus{
+    border-style: none;
+}
+
+.contacto__formulario input[name="email"],input[name="telefono"],textarea{
+    grid-column: 1/3;
+}
+
+.contacto__formulario input[name="telefono"]{
+    width: 50%;
+}
+
+.contacto__img{
+    display: none;
+}
 /**Fin Contacto**/
 
-/**Inicio Detalle proyecto**/
-.detalle{
-    display: flex;
-    flex-direction: column;
-}
-
-.detalle__tecnologias{
-    display: grid;
-    gap:2rem;
-    grid-template-columns: repeat(4,1fr);
-}
-
-.detalle__tecnologias ul{
-    border: 1px solid lightgray;
-    grid-column: 3/4;
-    width: max-content;
-    margin: auto 0;
-}
-
-.detalle_img {
-    grid-column: 1/3;
-    width: 100%;
-    margin: auto;
-}
-
-.detalle__tecnologias ul li{
-    font-size: 12px;
-    padding: 1rem 3rem;
-    list-style: none;
-}
-
-.detalle__descripcion{
-    padding: 2rem 0;
-}
 
 footer{
     display: flex;
@@ -247,7 +287,7 @@ footer{
 
 footer .fa-github, 
 footer .fa-gitlab{
-    font-size: 50px;
+    font-size: 30px;
     color: white;
     vertical-align: super;
 }
