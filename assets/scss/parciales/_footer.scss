@@ -1,0 +1,14 @@
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 4vh;
+}
+
+footer .fa-github, 
+footer .fa-gitlab{
+    font-size: 30px;
+    color: white;
+    vertical-align: super;
+}

@@ -1,0 +1,48 @@
+/** Inicio Header **/
+.navbar-brand{
+    display:none;
+}
+nav,footer {
+    background-color: $background-color!important;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.nav__contenedor{
+    margin: auto;
+}
+
+nav 
+{
+    ul{
+    width: auto;
+    text-align: center;
+
+        li{
+            display: inline-block;
+
+            a{
+                text-decoration: none;
+                color:#EFEFEF;
+                animation-name:border-nav;
+
+                &:hover{
+                    border-bottom: 1px solid $orange;
+                    color:white;
+                }
+            }
+        }
+    }
+}
+
+
+.header{
+    &__link{
+        &--active{
+                color: $orange!important;
+        }
+    }
+}
+
+/** Fin Header **/

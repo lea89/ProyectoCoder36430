@@ -1,0 +1,41 @@
+.titulo-aprendizaje{
+    color:white;
+    text-align: center;
+    margin: 2rem;
+}
+
+.aprendizaje{
+    display: grid;
+    gap:2rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(100px, auto);
+    padding: 1rem;
+}
+.aprendizaje__item{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+
+    h3{
+        color:white;
+    }
+}
+
+.aprendizaje__texto{
+    grid-column: 2/4;
+    width: 80%;
+
+    label{
+        color: lightgray;
+    }
+}
+.aprendizaje__img{
+    width: 80%;
+}
+
+.aprendizaje__parrafo{
+    background-color: lightgray;
+    padding: 10%;
+    margin-top: 3%;
+}

@@ -1,2 +1,5 @@
 # Ignora archivos del sistema Mac 
-.DS_Store
+node_modules/
+assets/img/.DS_Store
+assets/css/style.css.map
+.gitignore

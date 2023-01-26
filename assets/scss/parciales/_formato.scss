@@ -1,0 +1,25 @@
+body{
+    background-color: $background-color;
+    font-family: Roboto;
+    overflow-x: hidden;
+}
+
+hr{
+    color: $orange!important;
+    height: 5px!important;
+}
+
+h1{
+    text-align: center;
+    margin: 2% auto;
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color:$orange;
+    
+}

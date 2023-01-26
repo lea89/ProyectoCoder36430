@@ -1,0 +1,26 @@
+.proyectos {
+    width: 90%;
+    display: grid;
+    gap: 50px;
+    margin: auto;
+    justify-items:center;
+    grid-template-columns: repeat(3,1fr);
+
+    & a {
+        width: 60%;
+        text-align: center;
+        transition: all 1s;
+
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+
+    & label{
+        display: block;
+    }
+}
+
+.proyectos__img{
+    width: 100%;
+}

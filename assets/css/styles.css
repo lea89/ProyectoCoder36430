@@ -1,4 +1,4 @@
-body{
+/*body{
     background-color: #276E90;
     font-family: Roboto;
     overflow-x: hidden;
@@ -7,19 +7,16 @@ body{
 hr{
     color: #FFC300!important;
     height: 5px!important;
-}
+}*/
 
 /** Iniicio Propiedades compartidas **/
 
-.main__titulo{
-    text-align: center;
-    margin: 2% auto;
-}
+
 
 /** Iniicio Propiedades compartidas **/
 
 /** Inicio Header **/
-.navbar-brand{
+/*.navbar-brand{
     display:none;
 }
 nav,footer {
@@ -56,10 +53,10 @@ nav  ul  li a:hover{
 
 .header__link--active{
     color: #F2AA1F!important;
-}
+}*/
 
 /** Fin Header **/
-
+/*
 .main .presentacion {
     align-items: center;
     background-color: #EFEFEF;
@@ -87,7 +84,7 @@ nav  ul  li a:hover{
 }
 
 /** Aca me costo hacer que los hijos no desbordaran **/
-
+/*
 .tecnologias__contenedor,.frameworks__contenedor{
     display: flex;
     flex-wrap: nowrap;
@@ -115,13 +112,13 @@ nav  ul  li a:hover{
 .tecnologias__img:hover,
 .frameworks__img:hover{
     transform: scale(1.2)!important;
-}
+}*/
 
 /** FIN INDEX **/
 
 /** Inicio Proyectos **/
 
-
+/*
 .proyectos {
     width: 90%;
     display: grid;
@@ -131,7 +128,6 @@ nav  ul  li a:hover{
     grid-template-columns: repeat(3,1fr);
 }
 
-/** Siempre tengo que darle un width para poder armar la cuadricula sea a la etiqueta a como a la imagen? **/
 
 .proyectos a {
     width: 60%;
@@ -149,10 +145,11 @@ nav  ul  li a:hover{
 
 .proyectos label{
     display: block;
-}
+}*/
 /** Fin Proyectos **/
 
 /** Inicio aprendizaje**/
+/*
 .titulo-aprendizaje{
     color:white;
     text-align: center;
@@ -193,7 +190,7 @@ nav  ul  li a:hover{
 .aprendizaje__texto label{
     color: lightgray;
 }
-
+*/
 /**Fin aprendizaje**/
 
 /**Inicio Detalle proyecto**/
@@ -275,7 +272,7 @@ nav  ul  li a:hover{
     display: none;
 }
 /**Fin Contacto**/
-
+/*
 
 footer{
     display: flex;
@@ -290,4 +287,4 @@ footer .fa-gitlab{
     font-size: 30px;
     color: white;
     vertical-align: super;
-}
+}*/
