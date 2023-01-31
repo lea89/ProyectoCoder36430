@@ -1,10 +1,8 @@
 .proyectos {
     width: 90%;
-    display: grid;
-    gap: 50px;
+    @include displayGrid(1fr,50px,center);
+
     margin: auto;
-    justify-items:center;
-    grid-template-columns: repeat(3,1fr);
 
     & a {
         width: 60%;

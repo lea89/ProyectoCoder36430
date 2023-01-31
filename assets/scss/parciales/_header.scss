@@ -4,8 +4,8 @@
 }
 nav,footer {
     background-color: $background-color!important;
-    display: flex;
-    justify-content: center;
+
+    @include displayFlex(center,0);
     padding: 2%;
 }
 

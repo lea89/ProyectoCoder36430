@@ -8,11 +8,7 @@
         height: 71vh;
         background-image: url(../img/fondo.webp);
         background-size: cover;
-    }
-}
 
-.main {
-    .presentacion {
         img{
             display: block;
             width: 25%;
@@ -23,41 +19,42 @@
 
 
 .tecnologias{
+    
     text-align: center;
-}
+    margin: auto;
 
-.tecnologias__titulo{
-    margin: 5% auto;
-}
-
-.tecnologias__contenedor, .frameworks__contenedor{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    background-color: #276E90;
-    padding:2% 0!important;
-}
-
-.tecnologias__contenedor{
-     .carousel{
+    .carousel{
+        
+        width: 90%;
+        margin: auto;
         height: 45vh;
+
+        &__img{
+            width: 10%;
+            &:hover{
+                transform: scale(1.2)!important;
+            }
+        }
+
     }
 }
 
-.tecnologias__titulo,
-.frameworks__titulo{
-    color: white;
-}
 
-.tecnologias__img{
-    width: 15%;
-}
 
-.frameworks__img{
-    width: 10%;
-}
+.frameworks{
 
-.tecnologias__img:hover,
-.frameworks__img:hover{
-    transform: scale(1.2)!important;
+    &__contenedor{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding:2% 0!important;
+    }
+     
+    &__img{
+        width: 10%;
+        &:hover{
+                transform: scale(1.2)!important;
+        }
+    }
+
 }

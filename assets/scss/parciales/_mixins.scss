@@ -1,0 +1,25 @@
+@mixin displayGrid($fr,$gap:0,$justify-items:''){
+    display: grid;
+    grid-template-columns: repeat(2,$fr);
+
+    @if($gap != 0){
+        gap:$gap;
+    }
+
+    @if($justify-items != ''){
+        justify-items:$justify-items;
+    }
+}
+
+@mixin displayFlex($justify-content:'',$gap:0,$direction:'row'){
+    display:flex;
+    flex-direction: $direction;
+    
+    @if($justify-content != ''){
+        justify-content: $justify-content;
+    }
+
+    @if($gap != 0){
+        gap: $gap;
+    }
+}

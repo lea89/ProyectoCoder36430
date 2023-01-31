@@ -1,0 +1,37 @@
+.detalle{
+    padding: 2rem;
+    @include displayFlex('',0,column);
+
+&__tecnologias{
+    @include displayFlex('',2rem,column);
+    width: 90%;
+
+
+    img{
+        width: 50%;
+    }
+
+    ul{
+        border: 1px solid lightgray;
+        
+        @include displayFlex();
+
+        width: 45%;
+        margin: auto 0;
+        align-items: center;
+
+        li{
+            list-style: none;
+
+            img{
+                width: 25%;
+             }
+         }
+    }
+}
+
+    &__descripcion{
+        padding:1%;
+        background-color: #FFC300;
+    } 
+}

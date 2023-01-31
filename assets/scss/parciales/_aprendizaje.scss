@@ -5,37 +5,52 @@
 }
 
 .aprendizaje{
-    display: grid;
+    /*display: grid;
     gap:2rem;
     grid-template-columns: repeat(3,1fr);
     grid-auto-rows: minmax(100px, auto);
     padding: 1rem;
-}
-.aprendizaje__item{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    align-items: center;
 
-    h3{
-        color:white;
+    display: grid;
+    grid-template-columns: 1fr;*/
+    @include displayGrid(1fr,0.5rem);
+
+    padding: 1rem;
+
+    &__item{
+        @include displayFlex(default,2rem);
+        margin: auto;
+        align-items: center;
+        max-width: 900px;
+
+        h3{
+            color:white;
+        }
+        
+        &:nth-child(even){
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__texto{
+        grid-column: 2/4;
+        width: 80%;
+    
+        label{
+            color: lightgray;
+        }
+    }
+    &__img{
+        width: 35%;
+    }
+    
+    &__parrafo{
+        background-color: lightgray;
+        padding: 10%;
+        margin-top: 3%;
     }
 }
 
-.aprendizaje__texto{
-    grid-column: 2/4;
-    width: 80%;
 
-    label{
-        color: lightgray;
-    }
-}
-.aprendizaje__img{
-    width: 80%;
-}
 
-.aprendizaje__parrafo{
-    background-color: lightgray;
-    padding: 10%;
-    margin-top: 3%;
-}
+
