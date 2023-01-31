@@ -1,6 +1,6 @@
 .proyectos {
     width: 90%;
-    @include displayGrid(1fr,50px,center);
+    @include displayGrid(1fr,3,50px,center);
 
     margin: auto;
 

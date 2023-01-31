@@ -1,6 +1,6 @@
-@mixin displayGrid($fr,$gap:0,$justify-items:''){
+@mixin displayGrid($fr,$columns,$gap:0,$justify-items:''){
     display: grid;
-    grid-template-columns: repeat(2,$fr);
+    grid-template-columns: repeat($columns,$fr);
 
     @if($gap != 0){
         gap:$gap;
