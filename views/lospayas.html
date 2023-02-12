@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/mediaquery.css">
 
-    <title>Tutipic</title>
+    <title>Detalle de Proyecto 1</title>
 </head>
 <body>
     <header class="header">
@@ -60,27 +60,31 @@
 
 
     <main class="main">
-        <h1 class="main__titulo">Proyecto 1</h1>
+        <h1 class="main__titulo">Desarrollo web Ong Los Payas</h1>
 
         <section class="detalle">
             <div class="detalle__tecnologias mx-auto">
-                <img class="detalle_img mx-auto" src="../assets/img/tutipic.jpeg" alt="Imagen principal del proyecto">
+                <img class="detalle_img mx-auto" src="../assets/img/los_payas.png" alt="Imagen principal del proyecto">
                 <ul class="text-center align-baseline mx-auto">
-                    <li><img src="../assets/img/ic_android.png" alt="Android"></li>
-                    <li><img src="../assets/img/ic_java.png" alt="Java"></li>
-                </ul>
+                  <li data-toggle="tooltip"  title="Angular" ><img src="../assets/img/angular.png" alt="Angular"></li>
+                  <li data-toggle="tooltip"  title="Javascript" ><img src="../assets/img/js.png" alt="Javascript"></li>
+                  <li data-toggle="tooltip"  title="HTML 5" ><img src="../assets/img/html5.png" alt="HTML5"></li>
+                  <li data-toggle="tooltip"  title="CSS3" ><img src="../assets/img/css.png" alt="CSS3"></li>
+                  <li data-toggle="tooltip"  title="PHP" ><img src="../assets/img/php.png" alt="PHP"></li>
+              </ul>
             </div>
             <div class="detalle__descripcion mt-5">
                  
             <h3>Detalle del proyecto</h3>
-            <p>La aplicación Tutipic permite compartir en cada fiesta las fotos de todos los invitados. Descargando esta app podrás compartir fotos, agregar stickers y mostrar los momentos de tu inolvidable celebración</p>
-            <p>Colaboración en este proyecto. Autor: Marco Sastre</p>
-
-            <label><span style="font-weight: 600;">URL:</span> <a target="_blank" href="https://www.instagram.com/tutipic/?hl=es">Tutipic</a></label>
+            <p>Los Payas es una ONG de la ciudad de Mar del Plata que trabaja en el hospital Materno Infantil con paciente menores, la cual cuenta con voluntarios los cuales poseen 2 roles, el rol del payaso y el civil (cuidador del juego del payaso y que se encarga de la seguridad tanto del payaso como el paciente y su familia)</p>
+            <p>Se desarrolla una web para darle visibilidad al trabajo de la ong y a su vez que puedan recibir donaciones tanto por única vez como que se debiten automáticamente todos los meses. Esto ayuda a que la ONG subsista y ademas pueda crecer</p>
             </div>
+
+            <label><span style="font-weight: 600;">URL:</span> <a target="_blank" href="https://www.lospayas.org.ar/#/home">ONG Los Payas</a></label>
         </section>
     </main>
 
+    <hr>
 
     <footer>
       <label for="">saubietteleandro@gmail.com</label>
@@ -89,6 +93,20 @@
         <a href="https://gitlab.com/lendor07" target="_blank"><i class="fab fa-gitlab"></i></a>
       </footer>
 
+       <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+
+
+    <!--Bootstrap-->
+
+      <script>
+            $(document).ready(() =>{
+              $('[data-toggle="tooltip"]').tooltip();
+            });
+          </script>
+    
 </body>
 </html>

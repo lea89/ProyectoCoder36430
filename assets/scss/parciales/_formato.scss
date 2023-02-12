@@ -1,11 +1,10 @@
 body{
     background-color: $background-color;
-    font-family: Roboto;
     overflow-x: hidden;
 }
 
 hr{
-    color: $orange!important;
+    color: $details-color!important;
     height: 5px!important;
 }
 
@@ -16,10 +15,10 @@ h1,h2{
 }
 
 a{
-    color: white;
+    color: white!important;
     text-decoration: none;
-}
-a:hover{
-    color:$orange;
-    
+    &:hover{
+        color:$primary;
+        
+    }
 }

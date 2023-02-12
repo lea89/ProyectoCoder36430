@@ -1,9 +1,8 @@
 footer{
     @include displayFlex(space-around,0);
-
+    padding: 2%;
     align-items: center;
     color: white;
-    height: 4vh;
 }
 
 footer .fa-github, 

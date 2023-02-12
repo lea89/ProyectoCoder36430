@@ -2,13 +2,16 @@
     padding: 2rem;
     @include displayFlex('',0,column);
 
+            a{
+                color:$details-color !important;
+    }
 &__tecnologias{
     @include displayFlex('',2rem,column);
     width: 90%;
 
 
     img{
-        width: 50%;
+        width: 25%;
     }
 
     ul{
@@ -24,7 +27,7 @@
             list-style: none;
 
             img{
-                width: 25%;
+                width: 50%;
              }
          }
     }
@@ -32,6 +35,9 @@
 
     &__descripcion{
         padding:1%;
-        background-color: #FFC300;
+        h3{
+        color: $details-color;
+        }
     } 
+
 }

@@ -7,6 +7,7 @@ nav,footer {
 
     @include displayFlex(center,0);
     padding: 2%;
+    background-color: $details-color!important;
 }
 
 .nav__contenedor{
@@ -24,12 +25,12 @@ nav
 
             a{
                 text-decoration: none;
-                color:#EFEFEF;
+                color:white;
                 animation-name:border-nav;
 
                 &:hover{
-                    border-bottom: 1px solid $orange;
-                    color:white;
+                    border-bottom: 1px solid $primary;
+                    color:$primary;
                 }
             }
         }
@@ -40,7 +41,7 @@ nav
 .header{
     &__link{
         &--active{
-                color: $orange!important;
+                color: $primary!important;
         }
     }
 }

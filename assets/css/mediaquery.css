@@ -30,16 +30,25 @@
         margin: auto;
     }
     
+    .main .presentacion .texto{
+        width: 45%;
+        margin: auto;
+        padding: 5%;
+    }
 
     .tecnologias__img{
         width: 20%;
+    }
+    .tecnologias .carousel__img {
+        width: 20%;
+        margin-top: 5%;
     }
     .frameworks__img{
         width: 10%;
     }
 
     .tecnologias__contenedor .carousel{
-        height: 85vh;
+        height: 50vh;
     }
 
     .aprendizaje__item {
@@ -109,8 +118,17 @@
         font-size: 15px;
     }
 
+    .main .presentacion img {
+        width: auto;
+        margin-top: 0;
+    }
+
+    .main .presentacion .texto{
+        width: 50%;
+        margin: auto;
+    }
     .tecnologias__contenedor .carousel{
-        height: 65vh;
+        height: 55vh;
     }
 
     .tecnologias__img{
@@ -140,7 +158,7 @@
     }
 
     .detalle__tecnologias img{
-        width: 75%;
+        width: 30%;
     }
 
     .detalle__tecnologias ul{
@@ -181,7 +199,12 @@
         background-repeat:  no-repeat;
     }
 
-    
+    .main .presentacion .texto{
+        width: 60%;
+    padding: 5px;
+    font-size: 12px;
+    margin: auto;
+    }
 
     .tecnologias__img{
         width: 20%;
@@ -192,12 +215,13 @@
     }
 
     .tecnologias__contenedor .carousel{
-        height: 45vh;
+        height: 35vh;
     }
 
-    .aprendizaje{
-        grid-template-columns: repeat(2,1fr);
+    .tecnologias .carousel__img {
+        width: 25%;
     }
+
 
     .aprendizaje__subtitulo{
         font-size: 18px;
@@ -232,20 +256,19 @@
     }
 
     .detalle__tecnologias img{
-        width: 95%;
+        width: 50%;
     }
 
     .detalle__tecnologias ul{
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        width: 45%;
         margin: auto;
-        padding: 2% 3%;
+        /*padding: 2% 3%;*/
         align-items: center;
     }
 
     .detalle__tecnologias ul li img{
-        width: 70%;
+        width: 100%;
     }
 
     .detalle__descripcion p{
