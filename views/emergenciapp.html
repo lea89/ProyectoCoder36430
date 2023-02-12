@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="keywords" content="proyectos, frameworks, lenguajes, detalle, experiencia"/>
+
+  <meta name="author" content="Leandro Saubiette" />
+
+  <meta http-equiv="cache-control" content="no-cache"/>
+
+
+  <!--Fontawesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+  <!--Fuentes-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  
+  <!--BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!--AOS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/mediaquery.css">
+
+    <title>Detalle de Proyecto 1</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="nav__contenedor">
+              <a class="navbar-brand text-light" href="#">Menu</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link  text-light" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  text-light  header__link--active" aria-current="page" href="./proyectos.html">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  text-light" aria-current="page" href="./aprendizaje.html">Aprendizaje</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="./contacto.html">Contacto</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+    <main class="main">
+        <h1 class="main__titulo">Proyecto 1</h1>
+
+        <section class="detalle">
+            <div class="detalle__tecnologias mx-auto">
+                <img class="detalle_img mx-auto" src="../assets/img/emergenciapp.png" alt="Imagen principal del proyecto">
+                <ul class="text-center align-baseline mx-auto">
+                  <li data-toggle="tooltip"  title="Android" ><img src="../assets/img/ic_android.png" alt="Android"></li>
+                  <li data-toggle="tooltip"  title="Java" ><img src="../assets/img/ic_java.png" alt="Java"></li>
+              </ul>
+            </div>
+            <div class="detalle__descripcion mt-5">
+                 
+            <h3>Detalle del proyecto</h3>
+            <p>Aplicación desarrollada para Android, en donde el objetivo principal es que cada usuario sepa a que centro de atención acudir en caso de una consulta médica o una emergencia. La aplicación muestra desde los centros de salud hasta los hospitales mas importantes de la ciudad de Mar del Plata</p>
+            <label><span style="font-weight: 600;">URL:</span> Próximanente</label>
+            </div>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+      <label for="">saubietteleandro@gmail.com</label>
+        <label for="">+549111111111</label>
+        <a href="https://github.com/lea89" _target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://gitlab.com/lendor07" target="_blank"><i class="fab fa-gitlab"></i></a>
+      </footer>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(() =>{
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+</body>
+</html>
