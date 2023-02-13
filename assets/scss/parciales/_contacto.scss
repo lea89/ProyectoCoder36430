@@ -1,9 +1,12 @@
 .contacto{
 
     @include displayFlex(space-around,default);
+    
+    
 
     &__formulario{
-
+        background-color: lightgray;
+        padding: 2%;
         @include displayGrid(1fr,2,0.5rem);
         
         input{
@@ -22,6 +25,18 @@
     
         input[name="telefono"]{
             width: 50%;
+        }
+
+        button{
+            background-color: $details-color;
+            color: white;
+            font-family: 'Roboto';
+            grid-column: 1/3;
+            &:hover{
+                color:$details-color;
+                background-color: white;
+                font-size: 1rem;
+            }
         }
     }
     &__img{
